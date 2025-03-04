@@ -1,7 +1,7 @@
 {
   "name": "bmi-calculator",
   "version": "0.1.0",
-  "homepage": "https://MuskanPriyaSingh.github.io/bmi-calculator",
+  "homepage": "https://MuskanPriyaSingh.github.io/BMI_Calculator_React",
   "private": true,
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
