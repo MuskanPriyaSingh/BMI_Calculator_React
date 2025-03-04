@@ -1,38 +1,122 @@
-.App {
+body{
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Container */
+.container{
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(30, 58, 196, 0.2);
+  width: 350px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Heading */
+h2{
+  font-family: Georgia, serif;
+  color: #5a25f9;
+  margin-bottom: 35px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Form Inputs */
+label{
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  margin-left: 45px;
+  text-align: start;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+input{
+  width: 70%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Button Container */
+.btn-container{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  gap: 10px;
+  margin-top: 15px;
+}
+
+/* Buttons */
+.btn{
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 120px;
+}
+
+.btn:hover{
+  opacity: 0.8;
+}
+
+.btn:first-child{
+  background-color: #007bff;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.btn-outline{
+  background-color: #ddd;
+  color: black;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* BMI Result */
+.center{
+  margin-top: 20px;
+}
+
+h3{
+  font-size: 18px;
+  font-weight: bold;
+  color: #444;
+}
+
+p{
+  font-size: 16px;
+  color: #666;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 480px) {
+  .container{
+    padding: 15px;
   }
-  to {
-    transform: rotate(360deg);
+
+  h2{
+    font-size: 6vw;
+  }
+
+  input{
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .btn{
+    width: 100%; /* Buttons take full width on small screens */
+    font-size: 14px;
+  }
+
+  h3{
+    font-size: 5vw;
+  }
+
+  p{
+    font-size: 4vw;
   }
 }
